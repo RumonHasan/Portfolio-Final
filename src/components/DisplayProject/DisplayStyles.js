@@ -46,7 +46,7 @@ export const DisplayStyles = ()=>{
         // main info cards
         cardRoot:{
             padding: theme.spacing(1),
-            margin: theme.spacing(3),
+            marginBottom:theme.spacing(1),
             background:colors.mattBlack,
             maxWidth: '600px',
             width: '90%',
@@ -55,7 +55,7 @@ export const DisplayStyles = ()=>{
         cardImage:{
             background:colors.mattBlack,
             maxWidth: '90%',
-            maxHeight: '800px',
+            maxHeight: smallScreen ? '500px' :'800px',
             '&::-webkit-scrollbar':{
                 width: '10px'
             },
@@ -77,7 +77,7 @@ export const DisplayStyles = ()=>{
             display:'flex',
             justifyContent:'center',
             alignItems:'center',
-            paddingBottom:theme.spacing(1),
+            paddingBottom:theme.spacing(4),
             marginBottom:theme.spacing(2),
         },
         // lang card

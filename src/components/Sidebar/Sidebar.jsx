@@ -7,6 +7,8 @@ import { useGlobalContext } from '../../context/context';
 import { menu, snsIcons } from '../../services/data';
 // react router hash link
 import {NavHashLink} from 'react-router-hash-link';
+// logo
+import logo from '../../assets/logo.png';
 
 const Sidebar = () => {
     const {mediumScreen} = useGlobalContext();
@@ -16,7 +18,7 @@ const Sidebar = () => {
     return (
             <div className={classes.root}>
                     <Box className={classes.sideLogoBox} alignItems='center' display='flex' justifyContent='center' flexDirection='column'>
-                        <Typography variant='h1' className={classes.letter}>R</Typography>
+                        <img src={logo} alt={logo} className={classes.letter}/>
                         <Typography variant='h6' className={classes.name}>Rumon</Typography>
                         <Typography className={classes.designation}>Web Developer</Typography>
                     </Box>

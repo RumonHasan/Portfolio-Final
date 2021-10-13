@@ -38,7 +38,7 @@ const ProjectContent = () => {
                         exit={{ width: 0 }}
                         transition={{ duration: 1.5, delay:1 }} 
                         className={classes.cardImageContainer}>
-                            <Card className={classes.cardImage} elevation={5} style={{overflowY: 'auto'}}>
+                            <Card className={classes.cardImage} elevation={5} style={{overflowY: 'auto', marginBottom:'8px'}}>
                                 <CardMedia
                                     component='img'
                                     image={projectDetails.fullScreen}

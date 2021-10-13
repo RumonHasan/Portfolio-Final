@@ -41,7 +41,6 @@ export const SidebarStyles = ()=>{
         sideLogoBox:{
             background: colors.mainBlack,
             width: '100%',
-            paddingBottom: theme.spacing(3),
         },
         name:{
             color:colors.primaryWhite,
@@ -56,7 +55,7 @@ export const SidebarStyles = ()=>{
         },
         // side menu items:
         sideMenuBox:{
-            marginTop: theme.spacing(7),
+            marginTop: theme.spacing(3),
         },
         menuButton:{
             width: '120px',

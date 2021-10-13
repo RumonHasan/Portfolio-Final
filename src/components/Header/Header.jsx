@@ -11,6 +11,8 @@ import { HeaderStyle } from './HeaderStyles';
 import { fontSize } from '../../services/fontSize';
 // hashlink
 import {HashLink} from 'react-router-hash-link';
+// logo
+import logo from '../../assets/logo.png';
 
 const Header = () => {
     const {mediumScreen, openDrawer, drawer, closeDrawer} = useGlobalContext();
@@ -27,7 +29,7 @@ const Header = () => {
                     <div className={classes.menuHeader}>
                         <Button variant='text' className={classes.closeBtn} onClick={closeDrawer}><Close className={classes.closeIcon}/></Button>
                         <Box className={classes.sideLogoBox} alignItems='center' display='flex' justifyContent='center' flexDirection='column'>
-                            <Typography variant='h1' className={classes.letter}>R</Typography>
+                            <img src={logo} alt={logo} className={classes.letter}/>
                             <Typography variant='h6' className={classes.name}>Rumon</Typography>
                             <Typography className={classes.designation}>Web Developer</Typography>
                         </Box>
