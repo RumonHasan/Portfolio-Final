@@ -9,9 +9,9 @@ const ContactCube = ()=>{
     const canvasRef = useRef(null);
     // cube dimensions
     const cubeSize = {
-      width: 2.4,
-      height: 2.4,
-      depth: 2.4
+      width: 2.2,
+      height: 2.2,
+      depth: 2.2
     }
     // scene declared
     const newScene = new THREE.Scene();
@@ -26,7 +26,7 @@ const ContactCube = ()=>{
       const loader = new THREE.TextureLoader();// image texture loader
      
       // geometry 
-      const geometry = new THREE.SphereGeometry(1.7,256,16);
+      const geometry = new THREE.SphereGeometry(1.4,256,16);
       const material = new THREE.MeshBasicMaterial({map:loader.load(earth)})
       material.wireframe = true
       const cube = new THREE.Mesh(geometry, material);
@@ -57,7 +57,7 @@ const ContactCube = ()=>{
     return (
         <>
           <div ref={canvasRef}
-          style={{width: '100%', height:'500px', display:'flex', justifyContent:'center', cursor:'pointer'}}/>
+          style={{width: '100%', height:'500px', display:'flex', justifyContent:'center', cursor:'none'}}/>
         </>
       )
 }

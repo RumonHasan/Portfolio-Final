@@ -17,7 +17,7 @@ const ProjectButton = ({projectContent}) => {
         <div className={classes.projectButtonContainer}
         onMouseEnter={()=>setShowButton(true)}
         onMouseLeave={()=>setShowButton(false)}> 
-            <Button onClick={projectShow} className={showButton ? classes.projectOpenBtnShow : classes.projectOpenBtn} variant='contained'>View<br/>Project</Button>
+            <Button onClick={projectShow} className={showButton ? classes.projectOpenBtnShow : classes.projectOpenBtn} style={{cursor:'none'}} variant='contained'>View<br/>Project</Button>
         </div>
     )
 }

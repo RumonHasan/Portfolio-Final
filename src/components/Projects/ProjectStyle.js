@@ -23,6 +23,7 @@ export const ProjectStyles = ()=>{
             color: colors.secondBlue,
             padding: theme.spacing(1),
             margin: theme.spacing(1),
+            cursor: 'none',
             '&:hover':{
                 transition: '450ms',
                 background: colors.mainBlue,
@@ -47,7 +48,7 @@ export const ProjectStyles = ()=>{
             backgroundRepeat:'no-repeat',
             opacity: 0.6,
             background: colors.mainBlack,
-            cursor: 'pointer',
+            cursor: 'none',
             transition: '850ms',
             position:'relative',
             '&:hover':{

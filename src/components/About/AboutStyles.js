@@ -28,6 +28,7 @@ export const AboutStyles = ()=>{
         },
         contactLinkText:{
             fontFamily: "'Noto Sans', sans-serif",
+            cursor: 'none',
             color:colors.secondBlue,
             fontSize: 'clamp(0.5rem, 3vw, 1.2rem)',
             paddingRight: theme.spacing(2),

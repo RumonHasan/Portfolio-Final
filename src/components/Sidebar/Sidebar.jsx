@@ -27,8 +27,8 @@ const Sidebar = () => {
                             const {label} = item;
                             return (
                         <NavHashLink
-                         smooth to={'#'+label} key={index} style={{textDecoration:'none'}}>
-                            <Button className={classes.menuButton} variant='outlined'>
+                         smooth to={'#'+label} key={index} style={{textDecoration:'none', cursor:'none'}}>
+                            <Button className={classes.menuButton} style={{cursor:'none'}} variant='outlined'>
                                 <Typography variant='h6' className={classes.menuText}>{label}</Typography>
                             </Button>
                         </NavHashLink>
@@ -36,11 +36,11 @@ const Sidebar = () => {
                         })}
                     </Box>
 
-                    <Box className={classes.snsBox} alignItems='center' display='flex' flexDirection='column'>
+                    <Box className={classes.snsBox} style={{cursor:'none'}} alignItems='center' display='flex' flexDirection='column'>
                         {snsIcons.map((item, index)=>{
                             const {icon, link} = item;
                             return(
-                                <IconButton 
+                                <IconButton style={{cursor:'none'}}
                                 onClick={()=>window.open(link, '_blank')}
                                 key={index} className={classes.icons}>
                                     {icon}

@@ -160,8 +160,8 @@ const Contact = ()=>{
                                         <motion.textarea variants={inputs} type='text' name='message' style={{minHeight:120}} className={clsx(classes.inputField, classes.inputSpaces)} placeholder='Message' value={formInputs.message} onChange={handleFormInputs}/>
                                     </motion.div>
                                     <div className={classes.formButtons}>
-                                        <Button variant='contained' className={classes.submitBtn} type='submit'>Send Message!</Button>
-                                        <Button variant='contained' className={classes.resetBtn} onClick={resetForm}>Reset</Button>
+                                        <Button variant='contained' className={classes.submitBtn} style={{cursor:'none'}} type='submit'>Send Message!</Button>
+                                        <Button variant='contained' className={classes.resetBtn}  style={{cursor:'none'}} onClick={resetForm}>Reset</Button>
                                     </div>
                             </form>
                         </motion.div>

@@ -36,6 +36,7 @@ export const HomeStyles = ()=>{
         contactBtn:{
             color:colors.secondBlue,
             margin: theme.spacing(4),
+            cursor: 'none',
             width: '30%',
             border: `2px solid ${colors.secondBlue}`,
             '&:hover':{
@@ -56,7 +57,7 @@ export const HomeStyles = ()=>{
             justifyContent: 'center',
             width: 350,
             height: 350,
-            cursor:'pointer',
+            cursor:'none',
             animation: '$zoom 4s linear infinite',
             transition: '850ms',
         },

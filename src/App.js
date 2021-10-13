@@ -16,6 +16,8 @@ import Skills from './components/Skills/Skills';
 import Footer from './components/Footer/Footer';
 import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
+// custom cursor
+import CustomCursor from './CustomCursor';
 // makeStyles
 import { makeStyles } from '@material-ui/core';
 //space
@@ -43,6 +45,7 @@ const useStyles = makeStyles(theme=>({
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <CssBaseline/>
+          <CustomCursor/>
           <main className={classes.main}>
             <Sidebar/>
             <div className={classes.components}>

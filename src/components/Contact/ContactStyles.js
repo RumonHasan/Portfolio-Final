@@ -24,7 +24,7 @@ export const ContactStyles = ()=>{
             color:colors.secondBlue,
             fontSize: 'clamp(2rem, 10vw, 6rem)',
             whiteSpace:'nowrap',
-            paddingLeft:theme.spacing(5),
+            margin:theme.spacing(5),
         },
         // contact text:
         contactText:{
@@ -32,7 +32,7 @@ export const ContactStyles = ()=>{
             color:colors.primaryWhite,
             fontSize: 'clamp(0.5rem, 3vw, 1.5rem)',
             paddingTop:theme.spacing(3),
-            paddingLeft: theme.spacing(7),
+            marginLeft: theme.spacing(7),
         },
         // form
         formContainer:{

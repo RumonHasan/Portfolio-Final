@@ -51,6 +51,7 @@ export const GalleryStyles = ()=>{
             color: colors.secondBlue,
             padding: theme.spacing(1),
             margin: theme.spacing(1),
+            cursor:'none',
             '&:hover':{
                 transition: '450ms',
                 background: colors.mainBlue,
@@ -123,7 +124,7 @@ export const GalleryStyles = ()=>{
             height:'200px',
             opacity:'0.5',
             width: '100%',
-            cursor:'pointer',
+            cursor:'none',
             '&:hover':{
                 opacity:1,
                 transition: '.3s ease-in-out',

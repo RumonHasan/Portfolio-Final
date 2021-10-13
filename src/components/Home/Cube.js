@@ -82,8 +82,8 @@ const Cube = () => {
     },[]);
     return (
       <>
-        <div ref={canvasRef}
-        style={{width: '100%', height:'500px', display:'flex', justifyContent:'center', cursor:'pointer'}}/>
+        <div ref={canvasRef} 
+        style={{cursor:'none',width: '100%', height:'500px', display:'flex', justifyContent:'center'}}/>
       </>
     )
 }

@@ -101,7 +101,7 @@ const Sphere = () => {
 
     return (
     <>
-        <div ref={sphereGridRef} style={{display: 'flex', justifyContent: 'center', height: '550px', width: '570px', cursor:'pointer'}}/>
+        <div ref={sphereGridRef} style={{display: 'flex', justifyContent: 'center', height: '550px', width: '570px', cursor:'none'}}/>
     </>
     )
 }
