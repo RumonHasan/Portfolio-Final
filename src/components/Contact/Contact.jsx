@@ -44,7 +44,6 @@ const Contact = ()=>{
             window.removeEventListener('scroll', checkScroll);
         })
     },[triggerAnimation]);
-    console.log(triggerAnimation);
 
     const headerElements ={
         hidden:{

@@ -30,6 +30,7 @@ const CustomCursor = () => {
             const mouseX = clientX;
             const mouseY = clientY;
 
+            // transforming the cursor into a object that follows the cursor pos 
             cursorRef.current.style.transform = `translate3d(${mouseX-
             cursorRef.current.clientWidth / 2}px,${mouseY-
                 cursorRef.current.clientHeight / 2}px, 0)`

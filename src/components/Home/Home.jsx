@@ -56,19 +56,19 @@ const Home = () => {
                             <motion.h3 className={classes.homeText} variants={headerSentence} initial='hidden' animate='visible'>
                                {hiText.split('').map((letter, index)=>{
                                    return (
-                                       <motion.span variants={letterAnimate} key={index}>{letter} </motion.span>
+                                       <motion.span variants={letterAnimate} key={index}>{letter}</motion.span>
                                    )
                                })}
                                <br/>
                                {nameText.split('').map((letter, index)=>{
                                    return (
-                                       <motion.span variants={letterAnimate} key={index}>{letter} </motion.span>
+                                       <motion.span variants={letterAnimate} key={index}>{letter}</motion.span>
                                    )
                                })} 
                                <br/>
                                {jobText.split('').map((letter, index)=>{
                                    return (
-                                       <motion.span variants={letterAnimate} key={index}>{letter} </motion.span>
+                                       <motion.span variants={letterAnimate} key={index}>{letter}</motion.span>
                                    )
                                })}  
                             </motion.h3>
